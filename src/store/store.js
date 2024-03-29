@@ -9,7 +9,7 @@ const idgenerator = () => {
 
 // Adding initial state for the slice
 const taskinitialState = {
-    tasks: JSON.parse(localStorage.getItem( "task" ) ) ,
+    tasks: JSON.parse(localStorage.getItem( "task" ) ) || [] ,
     currentSearch: "all",
 }
 
