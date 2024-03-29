@@ -1,0 +1,101 @@
+.DisplayTask {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .DisplayTaskon {
+        width: 80%;
+    }
+}
+
+
+.headbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0px;
+    color: rgba(255, 255, 255, 0.4);
+
+    small {
+        width: 20%;
+        font-style: italic;
+    }
+
+    div {
+        width: 80%;
+        height: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.507);
+    }
+}
+
+.task {
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.519);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .taskCont {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        accent-color: green;
+    }
+
+    p {
+        border: 2px solid rgba(255, 255, 255, 0.423);
+        padding: 3px 15px;
+        border-radius: 14px;
+        cursor: pointer;
+        font-size: small;
+    }
+
+    svg:hover {
+        background-color: rgba(255, 255, 255, 0.168);
+        border-radius: 100%;
+        color: white;
+    }
+
+    svg {
+        color: rgba(255, 255, 255, 0.423);
+        padding: 6px;
+        cursor: pointer;
+
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .DisplayTask {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .DisplayTask {
+        width: 100%;
+    }
+
+    .headbar {
+
+        small {
+            width: 40%;
+            font-style: italic;
+        }
+
+        div {
+            width: 60%;
+            height: 0px;
+            border: 1px solid rgba(255, 255, 255, 0.507);
+        }
+    }
+}

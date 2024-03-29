@@ -1,0 +1,140 @@
+.Input {
+    /* for current box */
+    width: 60%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* for nested element  */
+    h2 {
+        font-size: xx-large;
+    }
+
+    /* for nested containers */
+    .InputBox {
+        /* for current box */
+        width: 80%;
+        display: flex;
+        font-size: 20px;
+
+        /* for nested element  */
+        input {
+            width: 80%;
+            height: 40px;
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            padding-left: 15px;
+            border-color: white;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        select {
+            padding-left: 8px;
+            width: 20%;
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-left: 0px;
+            border-radius: 0px 10px 10px 0px;
+            height: 45px;
+        }
+
+        option {
+            background-color: black;
+        }
+    }
+
+    .acctiongroup {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-top: 20px;
+
+        button {
+            cursor: pointer;
+            width: 120px;
+            height: 40px;
+            background-color: #a0ced934;
+            border: 2px solid #4bc3de;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        select {
+            cursor: pointer;
+            width: 140px;
+            height: 40px;
+            font-size: 16px;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-radius: 8px;
+        }
+
+        option {
+            background-color: black;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Input {
+        width: 100%;
+
+        .InputBox {
+
+            input {
+                width: 60%;
+            }
+
+            select {
+                width: 40%;
+            }
+        }
+
+        .acctiongroup {
+            font-size: 14px;
+
+            button {
+                cursor: pointer;
+                width: 120px;
+                height: 30px;
+                background-color: #a0ced934;
+                border: 2px solid #4bc3de;
+                color: white;
+                border-radius: 8px;
+                font-size: 12px;
+            }
+
+            select {
+                cursor: pointer;
+                width: 120px;
+                height: 30px;
+                font-size: 12px;
+                padding: 4px;
+                background-color: transparent;
+                color: white;
+                border-color: white;
+                border-radius: 8px;
+            }
+
+            option {
+                background-color: black;
+            }
+        }
+    }
+}
